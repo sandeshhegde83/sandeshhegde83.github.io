@@ -1,7 +1,8 @@
-var cacheName = 'ChoicePWA-Build-5-0';
+var cacheName = 'Choice-PWA-Build-1-0';
 var filesToCache = [
   '/',
   '/index.html',
+  '/manifest.json',
   '/offline.html',
   '/assets/font.css',
   '/assets/choice-hotels.css',
