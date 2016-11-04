@@ -1,0 +1,8 @@
+
+(function () {
+    var pl = document.createElement('script');
+    pl.type = 'text/javascript';
+    pl.async = true;
+    pl.src = 'https://pixel.sojern.com/pixel/partner/G4TnBnjfNlqgR8jK/hp?hl=&ffl=no';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(pl);
+})();

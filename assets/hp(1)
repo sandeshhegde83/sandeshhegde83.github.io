@@ -1,0 +1,25 @@
+
+
+(function () {
+    var s = document.createElement('script');
+    var p = "    var i = document.createElement('img');\
+    i.setAttribute('alt', '');\
+    i.setAttribute('height', '1');\
+    i.setAttribute('width', '1');\
+    i.setAttribute('style', 'display: none;');\
+    i.setAttribute('src', 'https://cm.g.doubleclick.net/pixel?google_nid=sojern__adx_open_bidder_seat&google_hm=vZGznh6KOiijW63OM49YTg&google_ula=&google_cm&google_sc&sjrn_id=GSINI8HIE1CiscTtSXe7NJJeFUqVwjk3wKZJx6bJv_Fd53ynpNAq0SOA-YH_n-Gv');\
+    document.body.appendChild(i);\
+";
+
+    s.type = 'text/javascript';
+    s.async = true;
+    if (s.textContent) {
+        s.textContent = p;
+    } else {
+        s.text = p;
+    }
+    var x = document.getElementsByTagName('script')[0];
+    x.parentNode.insertBefore(s, x);
+})();
+
+
