@@ -1,4 +1,4 @@
-var cacheName = 'Choice-PWA-Build-1-0';
+var cacheName = 'Choice-PWA-Build-1-0-0';
 var filesToCache = [
   '/',
   '/index.html',
@@ -50,6 +50,10 @@ self.addEventListener('fetch', function(e) {
   e.respondWith(
     caches.match(e.request).then(function(response) {
       return response || fetch(e.request);
+    }).catch(function() {
+      if(e.request.mode == 'navigate') {
+        return caches.match('/offline.html');
+      }
     })
   );
 });
