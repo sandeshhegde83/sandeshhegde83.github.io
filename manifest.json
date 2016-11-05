@@ -1,5 +1,6 @@
 {
   "name": "Choice Hotels Book Now",
+  "gcm_sender_id": "588883722952",
   "short_name": "Choice Hotels",
   "icons": [{
     "src": "assets/choice-logo-128.png",
