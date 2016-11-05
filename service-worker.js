@@ -1,4 +1,4 @@
-var cacheName = 'Choice-PWA-Build-1-0-0';
+var cacheName = 'Choice-PWA-Build-1-0-1';
 var filesToCache = [
   '/',
   '/index.html',
@@ -66,7 +66,7 @@ self.addEventListener('push', function(event) {
   event.waitUntil(
     self.registration.showNotification(title, {
       body: 'Click to view your hotel search information',
-      icon: 'assets/ch-logo.png',
+      icon: 'assets/choice-logo-128.png',
       tag: 'my-tag'
     }));
 });
