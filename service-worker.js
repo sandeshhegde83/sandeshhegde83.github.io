@@ -1,4 +1,4 @@
-var cacheName = 'Choice-PWA-Build-1-0-2';
+var cacheName = 'Choice-PWA-Build-1-0-3';
 var filesToCache = [
   '/',
   '/index.html',
@@ -17,7 +17,14 @@ var filesToCache = [
   '/assets/amazon.png',
   '/assets/Open_Sans_300.woff',
   '/assets/Open_Sans_400.woff',
-  '/assets/Open_Sans_700.woff'
+  '/assets/Open_Sans_700.woff',
+  '/assets/ch-priv-card-final-new.png',
+  '/assets/so-lpg-horizontal.svg',
+  '/assets/cp_logo_white.png',
+  '/assets/cp-logo-transparent.png',
+  '/assets/mobile-app-image.png',
+  '/assets/1.5.46.0/fonts/chFont.ttf',
+  '/assets/1.5.46.0/ch-sprite.png'
 ];
 
 self.addEventListener('install', function(e) {
