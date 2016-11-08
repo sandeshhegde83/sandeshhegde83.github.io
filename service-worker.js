@@ -106,3 +106,24 @@ self.addEventListener('notificationclick', function(event) {
       })
   );
 });
+
+self.addEventListener('sync', function(event) {
+  console.log('Sync Event trigerred');
+  if (event.tag == 'myFirstSync') {
+    event.waitUntil(fireXHRCall());
+  }
+});
+
+var oncePerSession = false;
+function fireXHRCall() {
+  if(!oncePerSession) {
+    console.log("executing the http request");
+    fetch("http://172.21.12.174:8086/pushNotification");
+    oncePerSession = true;
+  }
+}
+
+function reqListener () {
+  console.log(this.responseText);
+}
+

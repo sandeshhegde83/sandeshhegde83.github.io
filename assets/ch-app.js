@@ -22,6 +22,12 @@
 })();
 
 function openPushNotificationPopUp(){
+  navigator.serviceWorker.ready.then(function(swRegistration) {
+    console.log('Registering the service worker');
+    return swRegistration.sync.register('myFirstSync');
+  });
+
+
   var popUp = document.getElementById('notificationpopUp');
 
   // Get the button that opens the modal
